@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>ServiceProfiles.AspNetCore</RootNamespace>
+    <Authors>Daniel P. Doyle</Authors>
+    <Product>Service Profiles ASP.NET Core</Product>
+    <PackageId>TheDanielDoyle.ServiceProfiles.AspNetCore</PackageId>
+    <Description>ASP.NET Core implementation of ServiceProfiles framework.</Description>
+    <Copyright>© 2019 Daniel P. Doyle</Copyright>
+    <PackageProjectUrl>https://github.com/TheDanielDoyle/ServiceProfiles.AspNetCore</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/TheDanielDoyle/ServiceProfiles.AspNetCore</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TheDanielDoyle.ServiceProfiles" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>
