@@ -2,10 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-  </PropertyGroup>
-  
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
     <RootNamespace>ServiceProfiles.AspNetCore</RootNamespace>
     <Authors>Daniel P. Doyle</Authors>
     <Product>Service Profiles ASP.NET Core</Product>
