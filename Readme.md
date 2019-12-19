@@ -24,7 +24,7 @@ loader.LoadFromAssemblies(services, Configuration, Environment, new Assembly[] {
 ````csharp
 public class MvcProfile : WebHostServiceProfile
 {
-    public override void Configure(IServiceProfileContext<IWebHostEnvironment> context)
+    public override void Configure(IWebHostServiceProfileContext context)
     {
         context.Services.AddControllersWithViews();
     }
