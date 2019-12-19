@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace ServiceProfiles.AspNetCore
 {
-    public class WebHostServiceProfileContext : IServiceProfileContext<IWebHostEnvironment>
+    public class WebHostServiceProfileContext : IWebHostServiceProfileContext
     {
         public WebHostServiceProfileContext(IServiceCollection services, IConfiguration configuration, IWebHostEnvironment environment)
         {

@@ -13,7 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="TheDanielDoyle.ServiceProfiles" Version="3.0.0" />
+    <PackageReference Include="TheDanielDoyle.ServiceProfiles" Version="4.0.0" />
   </ItemGroup>
 
   <ItemGroup>
