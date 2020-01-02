@@ -12,16 +12,20 @@ namespace ServiceProfiles.AspNetCore.Samples.Mvc
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
+                .ConfigureWebHostDefaultsWithServiceProfiles(builder =>
                 {
-                    webBuilder.UseStartup<Startup>();
-                    //webBuilder.ConfigureServices((context, services) =>
-                    //{
-                    //    WebHostServiceProfileLoader loader = new WebHostServiceProfileLoader();
-                    //    loader.Load(services, context.Configuration, context.HostingEnvironment);
-                    //});
-                    //webBuilder.ConfigureServicesWithProfiles(typeof(Program).Assembly);
-                    webBuilder.ConfigureServicesWithProfiles();
+                    builder.UseStartup<Startup>();
                 });
+                //.ConfigureWebHostDefaults(webBuilder =>
+                //{
+                //    webBuilder.UseStartup<Startup>();
+                //    //webBuilder.ConfigureServices((context, services) =>
+                //    //{
+                //    //    WebHostServiceProfileLoader loader = new WebHostServiceProfileLoader();
+                //    //    loader.Load(services, context.Configuration, context.HostingEnvironment);
+                //    //});
+                //    //webBuilder.ConfigureServicesWithProfiles(typeof(Program).Assembly);
+                //    webBuilder.ConfigureServicesWithProfiles();
+                //});
     }
 }
