@@ -15,6 +15,13 @@ namespace ServiceProfiles.AspNetCore.Samples.Mvc
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    //webBuilder.ConfigureServices((context, services) =>
+                    //{
+                    //    WebHostServiceProfileLoader loader = new WebHostServiceProfileLoader();
+                    //    loader.Load(services, context.Configuration, context.HostingEnvironment);
+                    //});
+                    //webBuilder.ConfigureServicesWithProfiles(typeof(Program).Assembly);
+                    webBuilder.ConfigureServicesWithProfiles();
                 });
     }
 }
