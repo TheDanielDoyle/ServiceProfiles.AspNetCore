@@ -2,7 +2,19 @@
 
 Service Profile implementation suited for ASP.NET Core. IWebHostEnvironment is available instead of IHostEnvironment.
 
-## Quick start
+## Quick start (The Easy Way)
+
+1. When creating the IHost, replace the method, __ConfigureWebHostDefaults__ with __ConfigureWebHostDefaultsWithServiceProfiles__ to load __Service Profiles__ in the executing assembly.
+
+````csharp
+    Host.CreateDefaultBuilder(args)
+        .ConfigureWebHostDefaultsWithServiceProfiles(builder =>
+        {
+            builder.UseStartup<Startup>();
+        });
+````
+
+## Quick start (The Manual Way)
 
 1. Instantiate a __WebHostServiceProfileLoader()__ class.
 
@@ -17,9 +29,9 @@ loader.LoadFromAssembly(services, Configuration, Environment, typeof(Startup).As
 loader.LoadFromAssemblies(services, Configuration, Environment, new Assembly[] {typeof(Startup).Assembly});
 ````
 
-4. Create classes that derive from __WebHostServiceProfile__ and implement the __Configure()__ method.
+## Create Service Profiles
 
-5. See example:
+1. Create classes that derive from __WebHostServiceProfile__ and implement the __Configure()__ method.
 
 ````csharp
 public class MvcProfile : WebHostServiceProfile
