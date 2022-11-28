@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <RootNamespace>ServiceProfiles.AspNetCore</RootNamespace>
     <Authors>Daniel P. Doyle</Authors>
     <Product>Service Profiles ASP.NET Core</Product>
@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="TheDanielDoyle.ServiceProfiles" Version="6.0.0" />
+    <PackageReference Include="TheDanielDoyle.ServiceProfiles" Version="7.0.0" />
   </ItemGroup>
 
 </Project>
