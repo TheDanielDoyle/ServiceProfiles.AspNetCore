@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 
-namespace ServiceProfiles.AspNetCore
+namespace ServiceProfiles.AspNetCore;
+
+public interface IWebHostServiceProfileContext : IServiceProfileContext<IWebHostEnvironment>
 {
-    public interface IWebHostServiceProfileContext : IServiceProfileContext<IWebHostEnvironment>
-    {
-    }
 }
